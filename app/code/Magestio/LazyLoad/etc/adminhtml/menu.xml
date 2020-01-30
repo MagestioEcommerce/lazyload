@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magestio_LazyLoad::lazyload" title="Lazy Load" module="Magestio_LazyLoad" sortOrder="50"   resource="Magestio_LazyLoad::menu_lazyload" parent="Magestio_Core::menu"/>
+        <add id="Magestio_LazyLoad::configuration" title="Configuration" module="Magestio_LazyLoad" sortOrder="55"  resource="Magestio_LazyLoad::configuration" parent="Magestio_LazyLoad::lazyload" action="adminhtml/system_config/edit/section/lazyload" />
+    </menu>
+</config>
